@@ -11,7 +11,7 @@ export default (params) => {
   const { VITE_BASE_URL } = loadEnv(mode, CWD);
 
   return {
-    // base: './',
+    base: './',
     resolve: {
       alias: {
         assets: path.resolve(__dirname, './src/assets'),
