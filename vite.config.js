@@ -51,7 +51,7 @@ export default (params) => {
 
     build: {
       cssCodeSplit: false,
-      // outDir: 'docs'
+      outDir: 'docs'
     },
 
     server: {
