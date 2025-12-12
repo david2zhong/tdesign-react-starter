@@ -1,8 +1,8 @@
 name: Build and Deploy (GitHub Pages)
 
 on:
-  push:
-    branches: [ develop ]
+  # push:
+    # branches: [ develop ]
   workflow_dispatch:
 
 # Required for GitHub Pages
@@ -37,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './docs'
 
   deploy:
     needs: build
